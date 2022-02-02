@@ -1,3 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+    --color-gold : #BDAE82;
+}
+
 html {
+    box-sizing: border-box;
     scroll-behavior: smooth;
+    color: white;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.header-container {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav {
+    padding-right: 50px;
+}
+
+.nav-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+    background-image: url('./assets/img/forest.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+.play-button {
+    height: 150px;
+    width: 150px;
+    background-color: transparent;
+    border: 3px solid var(--color-gold);
+    border-radius: 75px;
+}
+.play-button img {
+    width: 100%;
+}
+
+.pulse:hover{
+	box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+    z-index: 5;
+	animation: pulse 1s;
+    
+}
+
+@keyframes pulse{
+	0%{box-shadow: 0 0 0 0 var(--color-gold)}
+}
+
+.footer-container {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+}
+
+.footer-container a img {
+    height: 50px;
 }
