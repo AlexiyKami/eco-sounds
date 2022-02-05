@@ -47,6 +47,12 @@ a {
 
 .nav-item {
     cursor: pointer;
+    transition: color 0.5s;
+}
+
+.nav-item.active {
+    color: var(--color-gold);
+    transition: color 0.5s;
 }
 
 .question-btn {
@@ -105,21 +111,26 @@ a {
 }
 
 .play-button {
+    position: relative;
     height: 150px;
     width: 150px;
     background-color: transparent;
     border: 3px solid var(--color-gold);
     border-radius: 75px;
+    
 }
 .play-button img {
     width: 100%;
 }
 
-.pulse:hover{
-	box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
-    z-index: 5;
+.play-button span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid transparent;  
+    border-radius: 75px;
+	box-shadow: 0 0 0 6em rgba(255, 255, 255, 0);
 	animation: pulse 1s;
-    
 }
 
 @keyframes pulse{
