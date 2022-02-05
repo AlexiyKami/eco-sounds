@@ -1,3 +1,5 @@
+console.log("Score: 70 \nВерстка: + 10\nИзображение меняется: + 10\nЗвук меняется: + 10\nАктивный элемент выделяется стилем: + 10\nКнопка play/pause + 20\nНе предусмотренный в задании функционал: +10 \n- Добавлен +1 интерактивный элемент: \"Лес после дождя\"\n- Имеется local storage\n- Добавлена анимация кнопки\n- Добавлено боковое меню с плавной анимацией и описанием сайта");
+
 const navItem = document.querySelectorAll('.nav-item');
 
 const playButton = document.querySelector('.play-button');
@@ -58,7 +60,6 @@ function pauseAudio() {
 }
 
 function animateButton() {
-    console.log("hello-world")
     playButton.appendChild(document.createElement('span'));
     setTimeout(function(){
         document.querySelector('.play-button > span').remove()
