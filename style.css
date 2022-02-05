@@ -16,8 +16,23 @@ html {
 a {
     text-decoration: none;
     color: white;
+    transition: color 0.7s;
 }
 
+a:hover {
+    color: var(--color-gold);
+    transition: color 0.7s;
+}
+
+a img {
+    transition: 0.7s;
+}
+
+a img:hover {
+    transition: 0.7s;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
 
 .header-container {
     height: 70px;
@@ -47,12 +62,17 @@ a {
 
 .nav-item {
     cursor: pointer;
-    transition: color 0.5s;
+    transition: color 0.7s;
+}
+
+.nav-item:hover {
+    transition: color 0.7s;
+    color: var(--color-gold);
 }
 
 .nav-item.active {
     color: var(--color-gold);
-    transition: color 0.5s;
+    transition: color 0.7s;
 }
 
 .question-btn {
@@ -64,6 +84,18 @@ a {
     border: 3px solid white;
     border-radius: 50px;
     cursor: pointer;
+    transition: 0.7s;
+}
+
+.question-btn.active {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+.question-btn:hover {
+    transition: 0.7s;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
 
 .question-btn img {
