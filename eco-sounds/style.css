@@ -57,7 +57,7 @@ a img:hover {
 .nav-ul {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 50px;
 }
 
 .nav-item {

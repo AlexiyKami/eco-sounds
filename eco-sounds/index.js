@@ -3,7 +3,7 @@ const navItem = document.querySelectorAll('.nav-item');
 const playButton = document.querySelector('.play-button');
 const playButtonImage = document.querySelector('.play-button-image');
 let isPlay = false;
-let currentBird = "solovey";
+let currentBird = "forest";
 const audio = new Audio();
 
 const backgroundImage = document.querySelector('.main-container');
@@ -75,6 +75,9 @@ function getLocalStorage() {
         currentBird = localStorage.getItem('bird');
         navItem.forEach((item) => item.classList.remove('active'));
         document.querySelector(`.nav-item[data-bird=${currentBird}]`).classList.add('active');
+        audio.src = `./assets/audio/${currentBird}.mp3`;
+        backgroundImage.style.backgroundImage = `url('./assets/img/${currentBird}.jpg')`;
+    } else {
         audio.src = `./assets/audio/${currentBird}.mp3`;
         backgroundImage.style.backgroundImage = `url('./assets/img/${currentBird}.jpg')`;
     }
