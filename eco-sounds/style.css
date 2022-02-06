@@ -121,6 +121,8 @@ a img:hover {
 }
 
 .question-menu h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     font-size: 22px;
     line-height: 150%;
